@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grey: hsl(210, 36%, 96%);
+    --white: #FFFFFF;
+    --light-blue: #65ADE5;
+    --black: #0D0D0D;
+    --grey-light:hsl(209, 34%, 30%);
+}
+body{
+    background-color: var(--grey);
+}
+/* mobile first design */
+.nav{
+    background-color: var(--white);
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo img{
+    height: 40px;
+}
+.toggle{
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.30s linear;
+}
+.toggle:hover{
+    color: var(--black);
+    /* rotate: 90deg; */
+    transform: rotate(90deg);
+    /* transition: rotate 0.30s linear; */
+}
+
+.links a{
+    font-size: 1.5rem;
+    color: var(--grey-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    
+}
+.links a:hover{
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding-left: 1.5rem;
+    transition: all 0.5s linear;
+    /* transition: background-color 0.75s ease-in-out; */
+}
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.50s linear;
+}
+.links-show{
+    height: 11rem;
+    transition: all 0.50s linear;
+}
+
+.social-links{
+    display: none;
+}
+
+/* medium screen size */
+@media screen and (min-width: 800px) {
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .toggle{
+        display: none;
+    }
+    .links{
+        height: auto;  
+        display: flex;
+        align-items: center;
+        list-style-type:none;
+    }
+    .links a{
+        font-size: 1.5rem;
+        color: var(--grey-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .links a:hover{
+        background-color: var(--white);
+        color: var(--light-blue);
+        padding-left: 1rem;
+        transition: all 0.5s linear;
+        /* transition: background-color 0.75s ease-in-out; */
+    }
+    .social-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+
+    }
+    .social-links a{
+        color: var(--light-blue);
+        margin-right: 0.50rem;
+        
+    }
+
+
+    
+}
