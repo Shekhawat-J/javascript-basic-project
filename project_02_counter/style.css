@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F5F8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.time{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100px;
+    color: #338106;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hero{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
