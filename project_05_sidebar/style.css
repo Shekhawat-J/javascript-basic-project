@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grey: hsl(210, 36%, 96%);
+    --white: #FFFFFF;
+    --light-blue: #65ADE5;
+    --black: #0D0D0D;
+    --grey-light:hsl(209, 34%, 30%);
+    --red : #E66B6B;
+    --dark-blue: #063251;
+}
+
+body{
+    background-color: var(--grey);
+}
+
+.solid-bar{
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    position: fixed;
+    /* top: 1rem; */
+    right: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: all 1s linear;
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo img{
+    height: 40px;
+}
+.cross-button{
+    font-size: 2rem;
+    color: var(--red);
+    /* transform: rotate(360deg); */
+    transition: all 0.25s linear;
+}
+.cross-button:hover{
+    transform: rotate(360deg);
+    transition: all 0.25s linear;
+}
+
+.items a{
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--light-blue);
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.50s linear;
+}
+
+.items li:hover a{
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding-left: 1.5rem;
+    transition: all 0.50s linear;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    /* height: 45%; */
+    padding-bottom: 2rem;
+}
+
+.social-links a{
+    color: var(--light-blue);
+    margin-left: 0.50rem;
+    margin-right: 0.50rem;
+    font-size: 1.5rem;
+    transition: all 0.50s linear;
+}
+
+.social-links a:hover{
+    color: var(--dark-blue);
+    transition: all 0.50s linear;
+}
+.side-bar{
+    display: none;
+    transition: all 0.50s;
+}
+.show-side-bar{
+    background-color: var(--white);
+    position: fixed;
+    /* top: 0rem; */
+    /* left: 0rem; */
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: 0.50s;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+@media screen and (min-width: 800px){
+    .show-side-bar{
+        width: 400px;
+    }
+}
