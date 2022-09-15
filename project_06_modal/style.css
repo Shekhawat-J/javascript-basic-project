@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;  
+}
+
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+}
+
+.title{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100vh;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.title h1{
+    font-size: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.btn{
+    background-color: #48A6E9;
+    color: #fff;
+    padding: 0.50rem 1rem;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #48A6E9;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    transition: all 0.50s linear;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #48A6E9;
+    transition: all 0.50s linear;
+}
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #48A6E9; */
+    /* background-color: #A2CBEE;
+    opacity: 0.5; */
+    background: rgba(73, 166, 233, 0.5);
+    visibility: hidden;
+    /* transition: all 0.50s linear; */
+}
+.open-modal{
+    visibility: visible;
+    /* transition: all 0.50s linear; */
+}
+
+
+.content{
+    /* display: none; */
+    /* opacity: 0.5; */
+   /* position: absolute; */
+   width: 100vh;
+   height: 30vh;
+   background-color:#fff;
+   font-size: 0.50rem;
+   letter-spacing: 3px;
+   border-radius: 10px;
+}
+.content h1{
+   
+   padding-left: 4rem;
+   padding-right: 4rem;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   text-align: center;
+  
+}
+.close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #BF3325;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 10vh;
+    transition: font-size 0.10s linear;
+    
+}
+.close-btn:hover{
+    color: #E66B6B;
+    font-size: 3rem;
+    transition: font-size, 0.20s linear;
+    /* transition: all 0.50s linear; */
+}
+
